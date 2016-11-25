@@ -32,4 +32,20 @@ public class WidgetTest {
 		widget.setEnabled(true);
 		assertTrue(widget.isEnabled());
 	}
+
+	/**
+	 * Test enabling and disabling a {@link Widget}
+	 */
+	@Test
+	public void updateEnableState2() {
+		int i = 10;
+		int j = 20;
+		int x = 30;
+		int y = 60;
+		Widget widget = new Widget();
+		widget.setEnabled(false);
+		assertFalse(widget.isEnabled());
+		widget.setEnabled(true);
+		assertTrue(widget.isEnabled());
+	}
 }
